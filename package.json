@@ -1,0 +1,40 @@
+{
+  "name": "svelte-stripe",
+  "version": "0.0.19",
+  "homepage": "https://sveltestripe.com",
+  "license": "MIT",
+  "scripts": {
+    "dev": "dotenv -c development -- vite dev",
+    "build": "dotenv -c development vite build",
+    "package": "svelte-kit package",
+    "publish": "npm run package && cd package && npm publish",
+    "preview": "dotenv -c development vite preview",
+    "lint": "prettier --ignore-path .prettierignore --check --plugin-search-dir=. . && eslint --ignore-path .prettierignore .",
+    "format": "prettier --ignore-path .prettierignore --write --plugin-search-dir=. ."
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^1.24.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-vercel": "next",
+    "@sveltejs/kit": "next",
+    "@vitejs/plugin-basic-ssl": "^0.1.1",
+    "dotenv-cli": "^5.0.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsdoc": "^38.0.6",
+    "eslint-plugin-svelte3": "^3.4.1",
+    "mdsvex": "^0.10.5",
+    "prettier": "~2.6.0",
+    "prettier-plugin-svelte": "^2.6.0",
+    "prismjs": "^1.27.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-slug": "^5.0.1",
+    "stripe": "^8.209.0",
+    "svelte": "^3.46.4",
+    "svelte2tsx": "^0.5.6",
+    "typescript": "^4.6.2",
+    "vite": "^3.0.0"
+  },
+  "type": "module"
+}
